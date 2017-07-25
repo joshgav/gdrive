@@ -1,0 +1,11 @@
+CLI for Google Drive
+
+* First download and stash a Google API credentials file in `./settings.json`. Make sure to activate the Drive API at <https://console.developers.google.com/apis>.
+* Then try it:
+
+  ```
+  npm install --global
+  gdrive list
+  ```
+
+More verbs to come.
