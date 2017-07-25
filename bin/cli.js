@@ -2,11 +2,14 @@
 
 const authorize  = require('../lib/authorize.js');
 const operations = require('../lib/operations.js');
+const googleapis = require('googleapis');
 
-let op = process.argv[2];
+let apiClient = googleapis.drive('v3');
 
 authorize(authClient => {
-  operations.setAuthClient(authClient);
-  operations[op]();
+  googleapis.options({auth: authClient});
+  let op = process.argv[2];
+  let fileId = process.argv[3];
+  operations[op](apiClient, fileId);
 });
 
