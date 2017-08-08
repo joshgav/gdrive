@@ -23,6 +23,7 @@
   "homepage": "https://github.com/joshgav/gdrive#readme",
   "dependencies": {
     "google-auth-library": "^0.10.0",
-    "googleapis": "^20.1.0"
+    "googleapis": "^20.1.0",
+    "mime": "^1.3.6"
   }
 }

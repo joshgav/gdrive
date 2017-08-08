@@ -7,6 +7,7 @@ CLI for Google Drive
   npm install --global
   gdrive list
   gdrive download <fileId>
+  gdrive upload <path>
   ```
 
 More verbs to come.

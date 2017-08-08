@@ -9,7 +9,7 @@ let apiClient = googleapis.drive('v3');
 authorize(authClient => {
   googleapis.options({auth: authClient});
   let op = process.argv[2];
-  let fileId = process.argv[3];
-  operations[op](apiClient, fileId);
+  let file = process.argv[3];
+  operations[op](apiClient, file);
 });
 
